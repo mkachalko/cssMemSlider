@@ -174,4 +174,33 @@ font-family: 'Oswald', sans-serif;
   border-color: #ffffff;
 }
 
+@media (max-width: 991.98px) {
+  .title {
+    font-size: 3rem;
+  }
+  .text {
+    font-size: 0.9rem;
+  }
+}
 
+@media (max-width: 767.98px) {
+  .title {
+    font-size: 2.2rem;
+  }
+  .text {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
+  .slider-block {
+    grid-template-columns: 1fr;
+    width: 94vw;
+  }
+  .slides {
+    grid-column: 1 / 2;
+    height: 47vw;
+  }
+  .dots {
+    grid-row: 2 / 3;
+    justify-self: center;
+  }
+}
