@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Mem Slider</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <main class="main">
+      <section class="slider-wrapper">
+
+        <h1 class="title">CSS Mem Slider</h1>
+
+        <div class="slider-block">
+          <input type="radio" id="dot-1" name="slider-dot" class="input" checked>
+          <input type="radio" id="dot-2" name="slider-dot" class="input">
+          <input type="radio" id="dot-3" name="slider-dot" class="input">
+          <input type="radio" id="dot-4" name="slider-dot" class="input">
+          <input type="radio" id="dot-5" name="slider-dot" class="input">
+
+          <div class="slides">
+            <div class="slide slide-1" id="slide-1"></div>
+            <div class="slide slide-2" id="slide-2"></div>
+            <div class="slide slide-3" id="slide-3"></div>
+            <div class="slide slide-4" id="slide-4"></div>
+            <div class="slide slide-5" id="slide-5"></div>
+          </div>
+
+          <div class="text-wrapper">
+            <div class="text-block">
+              <p class="text text-1">Hold my beer! I'm going to learn a new javascript framework... </p>
+              <p class="text text-2">The HTML doesn't need to load JS and CSS if the HTML and CSS are in JS</p>
+              <p class="text text-3">-You told me you were fullstack!!!<br>-Yeah... Full StackOverFlow...</p>
+              <p class="text text-4">What do you think a front-end developer does?</p>
+              <p class="text text-5">Not sure if my code is actually elegant and well-organized.<br>
+                Or I've just worked on it so long that I forgot what good code looks like...</p>
+            </div>
+          </div>
+
+          <div class="dots">
+            <label for="dot-1" class="dot-wrap"><span class="dot dot-1"></span></label>
+            <label for="dot-2" class="dot-wrap"><span class="dot dot-2"></span></label>
+            <label for="dot-3" class="dot-wrap"><span class="dot dot-3"></span></label>
+            <label for="dot-4" class="dot-wrap"><span class="dot dot-4"></span></label>
+            <label for="dot-5" class="dot-wrap"><span class="dot dot-5"></span></label>
+          </div>
+        </div>
+
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>
