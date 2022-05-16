@@ -8,6 +8,7 @@ linear-gradient(45deg, #92baac 45px, transparent 45px,transparent 91px, #e1ebbd 
 linear-gradient(-45deg, #92baac 23px, transparent 23px, transparent 68px,#92baac 68px,#92baac 113px,transparent 113px,transparent 158px,#92baac 158px);
 background-color:#e1ebbd;
 background-size: 128px 128px;
+font-family: 'Oswald', sans-serif;
 }
 
 .slider-wrapper {
@@ -20,9 +21,11 @@ background-size: 128px 128px;
 .title {
   margin: 2rem 0 1.5rem;
   font-size: 4rem;
+  font-weight: 600;
 }
 
 .slider-block {
+  margin-bottom: 2rem;
   display: grid;
   grid-template-columns: 3fr 1fr;
   width: 55vw;
@@ -74,19 +77,46 @@ background-size: 128px 128px;
   display: none;
 }
 
-#dot-1:checked ~ .slides {
+.text-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.text-block {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  transition: margin-left ease-out 0.5s;
+}
+
+.text {
+  margin: 0;
+  padding: 1vw;
+  width: 100%;
+  flex-shrink: 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+#dot-1:checked ~ .slides,
+#dot-1:checked ~ .text-wrapper .text-block {
   margin-left: 0;
 }
-#dot-2:checked ~ .slides {
+#dot-2:checked ~ .slides,
+#dot-2:checked ~ .text-wrapper .text-block {
   margin-left: -100%;
 }
-#dot-3:checked ~ .slides {
+#dot-3:checked ~ .slides,
+#dot-3:checked ~ .text-wrapper .text-block {
   margin-left: -200%;
 }
-#dot-4:checked ~ .slides {
+#dot-4:checked ~ .slides,
+#dot-4:checked ~ .text-wrapper .text-block {
   margin-left: -300%;
 }
-#dot-5:checked ~ .slides {
+#dot-5:checked ~ .slides,
+#dot-5:checked ~ .text-wrapper .text-block {
   margin-left: -400%;
 }
 
